@@ -1,0 +1,1481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A comprehensive, evidence-based guide to living well with an ileostomy. Learn about nutrition, hydration, skin care, exercise, and emotional wellbeing after surgery.">
+    <meta name="keywords" content="ileostomy, stoma care, ostomy guide, ileostomy diet, ostomy nutrition, stoma skin care">
+    
+    <!-- Open Graph / Social Media -->
+    <meta property="og:title" content="Living Well with an Ileostomy - Evidence-Based Guide">
+    <meta property="og:description" content="A comprehensive guide to help you thrive after ileostomy surgery. Your journey to wellness starts here.">
+    <meta property="og:type" content="article">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="">
+    
+    <title>Living Well with an Ileostomy | Complete Care Guide</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Source+Sans+3:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1198873851888355"
+     crossorigin="anonymous"></script>
+    <style>
+        :root {
+            --cream: #FDF8F3;
+            --warm-white: #FFFCF9;
+            --terracotta: #C67B5C;
+            --terracotta-light: #E8A58C;
+            --terracotta-dark: #9E5A3C;
+            --sage: #7A9E7E;
+            --sage-light: #B8D4BB;
+            --sage-dark: #5C7A5F;
+            --earth: #8B7355;
+            --sand: #E8DED4;
+            --charcoal: #2D2A26;
+            --warm-gray: #6B6560;
+            --soft-coral: #F4C4B0;
+            --blush: #F5E6E0;
+            
+            /* Focus outline color */
+            --focus-color: #C67B5C;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        /* Respect user motion preferences */
+        @media (prefers-reduced-motion: reduce) {
+            html {
+                scroll-behavior: auto;
+            }
+            
+            *,
+            *::before,
+            *::after {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+            }
+        }
+
+        body {
+            font-family: 'Source Sans 3', sans-serif;
+            line-height: 1.75;
+            color: var(--charcoal);
+            background: var(--cream);
+            font-size: 18px;
+            overflow-x: hidden;
+        }
+
+        /* Skip link for accessibility */
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: var(--terracotta);
+            color: white;
+            padding: 8px 16px;
+            z-index: 10000;
+            text-decoration: none;
+            font-weight: 600;
+            border-radius: 0 0 4px 0;
+            transition: top 0.3s;
+        }
+        
+        .skip-link:focus {
+            top: 0;
+            outline: 3px solid var(--charcoal);
+            outline-offset: 2px;
+        }
+
+        /* Improved focus states for accessibility */
+        :focus-visible {
+            outline: 3px solid var(--focus-color);
+            outline-offset: 2px;
+        }
+        
+        /* Remove default focus for mouse users, keep for keyboard */
+        :focus:not(:focus-visible) {
+            outline: none;
+        }
+
+        /* Noise texture overlay - fixed z-index to not block interactions */
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            opacity: 0.03;
+            z-index: 9999;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 4rem 2rem;
+            position: relative;
+            background: linear-gradient(180deg, var(--blush) 0%, var(--cream) 100%);
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -30%;
+            width: 80%;
+            height: 150%;
+            background: radial-gradient(ellipse, var(--soft-coral) 0%, transparent 70%);
+            opacity: 0.3;
+            animation: float 20s ease-in-out infinite;
+        }
+
+        .hero::after {
+            content: '';
+            position: absolute;
+            bottom: -30%;
+            left: -20%;
+            width: 60%;
+            height: 100%;
+            background: radial-gradient(ellipse, var(--sage-light) 0%, transparent 70%);
+            opacity: 0.25;
+            animation: float 25s ease-in-out infinite reverse;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translate(0, 0) rotate(0deg); }
+            50% { transform: translate(30px, -30px) rotate(5deg); }
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            max-width: 900px;
+            animation: fadeUp 1.2s ease-out;
+        }
+
+        @keyframes fadeUp {
+            from {
+                opacity: 0;
+                transform: translateY(40px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .hero h1 {
+            font-family: 'Fraunces', serif;
+            font-size: clamp(3rem, 8vw, 6rem);
+            font-weight: 400;
+            line-height: 1.1;
+            color: var(--charcoal);
+            margin-bottom: 1.5rem;
+            letter-spacing: -0.02em;
+        }
+
+        .hero h1 span {
+            font-style: italic;
+            color: var(--terracotta);
+        }
+
+        .hero-subtitle {
+            font-size: 1.25rem;
+            color: var(--warm-gray);
+            font-weight: 300;
+            max-width: 600px;
+            margin: 0 auto 3rem;
+            animation: fadeUp 1.2s ease-out 0.2s backwards;
+        }
+
+        .scroll-indicator {
+            position: absolute;
+            bottom: 3rem;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--warm-gray);
+            font-size: 0.85rem;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            animation: fadeUp 1.2s ease-out 0.6s backwards;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 0.5rem;
+            border-radius: 4px;
+            transition: color 0.3s;
+        }
+        
+        .scroll-indicator:hover,
+        .scroll-indicator:focus {
+            color: var(--terracotta);
+        }
+
+        .scroll-indicator::after {
+            content: '';
+            width: 1px;
+            height: 40px;
+            background: linear-gradient(to bottom, var(--terracotta), transparent);
+            animation: scrollPulse 2s ease-in-out infinite;
+        }
+
+        @keyframes scrollPulse {
+            0%, 100% { transform: scaleY(1); opacity: 1; }
+            50% { transform: scaleY(0.6); opacity: 0.5; }
+        }
+
+        /* Navigation */
+        nav {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            background: rgba(253, 248, 243, 0.95);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-bottom: 1px solid rgba(139, 115, 85, 0.1);
+            padding: 1rem 2rem;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 0.5rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        nav a {
+            display: block;
+            padding: 0.6rem 1.2rem;
+            color: var(--warm-gray);
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 500;
+            border-radius: 100px;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+        }
+
+        nav a::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: var(--terracotta);
+            border-radius: 100px;
+            transform: scale(0);
+            transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            z-index: -1;
+        }
+
+        nav a:hover,
+        nav a:focus {
+            color: white;
+        }
+
+        nav a:hover::before,
+        nav a:focus::before {
+            transform: scale(1);
+        }
+        
+        /* Active nav state */
+        nav a[aria-current="true"] {
+            color: white;
+        }
+        
+        nav a[aria-current="true"]::before {
+            transform: scale(1);
+        }
+
+        /* Main Content */
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+        }
+
+        section {
+            margin-bottom: 8rem;
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+            scroll-margin-top: 100px; /* Account for sticky nav */
+        }
+        
+        section.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .section-header {
+            margin-bottom: 3rem;
+            position: relative;
+        }
+
+        .section-number {
+            font-family: 'Fraunces', serif;
+            font-size: 8rem;
+            font-weight: 200;
+            color: var(--sand);
+            line-height: 1;
+            position: absolute;
+            top: -2rem;
+            left: -1rem;
+            z-index: -1;
+            opacity: 0.7;
+            user-select: none;
+            aria-hidden: true;
+        }
+
+        h2 {
+            font-family: 'Fraunces', serif;
+            font-size: clamp(2rem, 5vw, 3rem);
+            font-weight: 400;
+            color: var(--charcoal);
+            position: relative;
+            padding-left: 0;
+        }
+
+        h2::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 3px;
+            background: linear-gradient(90deg, var(--terracotta), var(--terracotta-light));
+            margin-top: 1rem;
+            border-radius: 2px;
+        }
+
+        h3 {
+            font-family: 'Fraunces', serif;
+            font-size: 1.5rem;
+            font-weight: 500;
+            color: var(--charcoal);
+            margin: 2.5rem 0 1rem;
+        }
+
+        h4 {
+            font-family: 'Source Sans 3', sans-serif;
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--terracotta-dark);
+            margin: 1.5rem 0 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        p {
+            margin-bottom: 1rem;
+            color: var(--warm-gray);
+        }
+
+        /* Cards Grid */
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .card {
+            background: var(--warm-white);
+            border-radius: 20px;
+            padding: 2rem;
+            border: 1px solid rgba(139, 115, 85, 0.1);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, var(--terracotta), var(--sage));
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 25px 50px -12px rgba(139, 115, 85, 0.15);
+        }
+
+        .card:hover::before {
+            transform: scaleX(1);
+        }
+        
+        /* Remove hover transform on touch devices for better UX */
+        @media (hover: none) {
+            .card:hover {
+                transform: none;
+            }
+        }
+
+        .card h4 {
+            margin-top: 0;
+            color: var(--charcoal);
+            font-family: 'Fraunces', serif;
+            font-weight: 500;
+            font-size: 1.25rem;
+            text-transform: none;
+            letter-spacing: normal;
+        }
+
+        .card ul {
+            margin: 0;
+            padding-left: 0;
+            list-style: none;
+        }
+
+        .card li {
+            padding: 0.5rem 0;
+            padding-left: 1.5rem;
+            position: relative;
+            color: var(--warm-gray);
+            border-bottom: 1px solid rgba(139, 115, 85, 0.08);
+        }
+
+        .card li:last-child {
+            border-bottom: none;
+        }
+
+        .card li::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 1rem;
+            width: 6px;
+            height: 6px;
+            background: var(--terracotta-light);
+            border-radius: 50%;
+        }
+
+        /* Info Boxes */
+        .info-box {
+            background: linear-gradient(135deg, var(--blush) 0%, var(--cream) 100%);
+            border-radius: 20px;
+            padding: 2rem;
+            margin: 2rem 0;
+            border-left: 4px solid var(--terracotta);
+            position: relative;
+        }
+
+        .info-box h3,
+        .info-box h4 {
+            margin-top: 0;
+            color: var(--terracotta-dark);
+        }
+
+        .alert-box {
+            background: linear-gradient(135deg, #FFF5F5 0%, #FEE2E2 100%);
+            border-radius: 20px;
+            padding: 2rem;
+            margin: 2rem 0;
+            border-left: 4px solid #DC2626;
+        }
+
+        .alert-box h3, 
+        .alert-box h4 {
+            color: #991B1B;
+            margin-top: 0;
+        }
+
+        .success-box {
+            background: linear-gradient(135deg, #F0FDF4 0%, #DCFCE7 100%);
+            border-radius: 20px;
+            padding: 2rem;
+            margin: 2rem 0;
+            border-left: 4px solid var(--sage);
+        }
+
+        .success-box h3, 
+        .success-box h4 {
+            color: var(--sage-dark);
+            margin-top: 0;
+        }
+
+        .warning-box {
+            background: linear-gradient(135deg, #FFFBEB 0%, #FEF3C7 100%);
+            border-radius: 20px;
+            padding: 2rem;
+            margin: 2rem 0;
+            border-left: 4px solid #D97706;
+        }
+
+        .warning-box h4 {
+            color: #92400E;
+            margin-top: 0;
+        }
+
+        /* Lists */
+        ul, ol {
+            margin: 1rem 0;
+            padding-left: 1.5rem;
+        }
+
+        li {
+            margin: 0.5rem 0;
+            color: var(--warm-gray);
+        }
+
+        li strong {
+            color: var(--charcoal);
+        }
+
+        /* Footer */
+        footer {
+            background: var(--charcoal);
+            color: var(--sand);
+            padding: 4rem 2rem;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        footer::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, var(--terracotta), var(--sage), var(--terracotta));
+        }
+
+        .disclaimer {
+            max-width: 800px;
+            margin: 0 auto 2rem;
+            padding: 2rem;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 16px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .disclaimer h4 {
+            color: var(--terracotta-light);
+            margin-top: 0;
+        }
+
+        .disclaimer p {
+            color: var(--sand);
+            font-size: 0.95rem;
+            margin: 0;
+        }
+        
+        .footer-meta {
+            opacity: 0.7;
+            font-size: 0.9rem;
+        }
+
+        /* Ad Placements */
+        .ad-container {
+            margin: 3rem 0;
+            padding: 1.5rem;
+            background: var(--warm-white);
+            border: 1px dashed rgba(139, 115, 85, 0.2);
+            border-radius: 16px;
+            text-align: center;
+            position: relative;
+        }
+
+        .ad-container::before {
+            content: 'Advertisement';
+            position: absolute;
+            top: -0.6rem;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--cream);
+            padding: 0 0.75rem;
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--warm-gray);
+            opacity: 0.7;
+        }
+
+        .ad-banner {
+            max-width: 728px;
+            margin: 0 auto;
+        }
+
+        /* Native/Contextual Ad Card */
+        .sponsored-card {
+            background: linear-gradient(135deg, var(--warm-white) 0%, var(--blush) 100%);
+            border: 1px solid rgba(139, 115, 85, 0.15);
+            border-radius: 20px;
+            padding: 2rem;
+            margin: 2rem 0;
+            position: relative;
+        }
+
+        /* Sidebar-style ad for wider screens */
+        .ad-sidebar {
+            position: fixed;
+            right: 2rem;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 160px;
+            z-index: 50;
+            display: none;
+        }
+
+        @media (min-width: 1500px) {
+            .ad-sidebar {
+                display: block;
+            }
+        }
+
+        .ad-sidebar .ad-container {
+            margin: 0;
+            padding: 1rem;
+        }
+
+        /* Back to Top Button */
+        .back-to-top {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            width: 50px;
+            height: 50px;
+            background: var(--terracotta);
+            color: white;
+            border: none;
+            border-radius: 50%;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s, visibility 0.3s, transform 0.3s;
+            z-index: 99;
+            box-shadow: 0 4px 15px rgba(198, 123, 92, 0.3);
+        }
+        
+        .back-to-top:hover,
+        .back-to-top:focus {
+            transform: translateY(-3px);
+            background: var(--terracotta-dark);
+        }
+        
+        .back-to-top.visible {
+            opacity: 1;
+            visibility: visible;
+        }
+        
+        .back-to-top svg {
+            width: 24px;
+            height: 24px;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero {
+                min-height: auto;
+                padding: 6rem 1.5rem;
+            }
+
+            nav ul {
+                gap: 0.25rem;
+            }
+
+            nav a {
+                padding: 0.5rem 0.8rem;
+                font-size: 0.8rem;
+            }
+
+            main {
+                padding: 2rem 1rem;
+            }
+
+            section {
+                margin-bottom: 4rem;
+            }
+
+            .section-number {
+                font-size: 5rem;
+                top: -1rem;
+            }
+
+            .cards-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .back-to-top {
+                bottom: 1rem;
+                right: 1rem;
+                width: 44px;
+                height: 44px;
+            }
+        }
+
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: var(--cream);
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: var(--terracotta-light);
+            border-radius: 5px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: var(--terracotta);
+        }
+        
+        /* Print styles */
+        @media print {
+            body::before,
+            nav,
+            .scroll-indicator,
+            .ad-container,
+            .sponsored-card,
+            .ad-sidebar,
+            .back-to-top {
+                display: none !important;
+            }
+            
+            .hero {
+                min-height: auto;
+                padding: 2rem;
+            }
+            
+            section {
+                opacity: 1 !important;
+                transform: none !important;
+                page-break-inside: avoid;
+                margin-bottom: 2rem;
+            }
+            
+            .card {
+                break-inside: avoid;
+                box-shadow: none;
+                border: 1px solid #ccc;
+            }
+            
+            footer {
+                background: white;
+                color: black;
+            }
+            
+            footer::before {
+                display: none;
+            }
+            
+            .disclaimer {
+                border: 1px solid #ccc;
+            }
+            
+            .disclaimer h4,
+            .disclaimer p {
+                color: black;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Skip link for keyboard users -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <header class="hero" role="banner">
+        <div class="hero-content">
+            <h1>Living <span>Well</span> with an Ileostomy</h1>
+            <p class="hero-subtitle">A comprehensive, evidence-based guide to help you thrive after surgery. Your journey to wellness starts here.</p>
+        </div>
+        <button class="scroll-indicator" aria-label="Scroll down to explore content" onclick="document.getElementById('understanding').scrollIntoView({behavior: 'smooth'})">
+            <span aria-hidden="true">Explore</span>
+        </button>
+    </header>
+
+    <nav aria-label="Main navigation">
+        <ul role="list">
+            <li><a href="#understanding">Understanding</a></li>
+            <li><a href="#nutrition">Nutrition</a></li>
+            <li><a href="#hydration">Hydration</a></li>
+            <li><a href="#skin-care">Skin Care</a></li>
+            <li><a href="#high-output">High Output</a></li>
+            <li><a href="#exercise">Exercise</a></li>
+            <li><a href="#complications">Complications</a></li>
+            <li><a href="#wellbeing">Wellbeing</a></li>
+        </ul>
+    </nav>
+
+    <!-- Top Banner Ad -->
+    <aside class="ad-container ad-banner" style="margin: 1rem auto; max-width: 1200px; padding-left: 2rem; padding-right: 2rem;" aria-label="Advertisement">
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-1198873851888355"
+             data-ad-slot="auto"
+             data-ad-format="horizontal"
+             data-full-width-responsive="true"></ins>
+        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </aside>
+
+    <main id="main-content">
+        <section id="understanding" aria-labelledby="understanding-heading">
+            <div class="section-header">
+                <span class="section-number" aria-hidden="true">01</span>
+                <h2 id="understanding-heading">Understanding Your Ileostomy</h2>
+            </div>
+
+            <div class="info-box">
+                <h3>What is an Ileostomy?</h3>
+                <p>An ileostomy is a surgical procedure where the ileum (part of the small bowel) is brought through the abdominal wall via a surgically-created opening called a stoma. This allows stool to evacuate from the body via the ileum instead of through the anus.</p>
+            </div>
+
+            <h3>What to Expect</h3>
+            <div class="cards-grid">
+                <article class="card">
+                    <h4>Stoma Appearance</h4>
+                    <ul>
+                        <li>Pink or red color</li>
+                        <li>Moist and slightly shiny</li>
+                        <li>Typically on right side of abdomen</li>
+                        <li>Protrudes 2-3 cm above skin (may be flush)</li>
+                    </ul>
+                </article>
+
+                <article class="card">
+                    <h4>Normal Output</h4>
+                    <ul>
+                        <li><strong>Consistency:</strong> Loose or porridge-like</li>
+                        <li><strong>Volume:</strong> 200-700 mL per day</li>
+                        <li><strong>Frequency:</strong> Empty pouch 6-8 times daily</li>
+                    </ul>
+                </article>
+
+                <article class="card">
+                    <h4>High Output Stoma</h4>
+                    <ul>
+                        <li>Output exceeding 1,000-2,000 mL/day</li>
+                        <li>Typically lasts 1-3 days</li>
+                        <li>Affects 14-24% of patients</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <section id="nutrition" aria-labelledby="nutrition-heading">
+            <div class="section-header">
+                <span class="section-number" aria-hidden="true">02</span>
+                <h2 id="nutrition-heading">Nutrition & Diet Management</h2>
+            </div>
+
+            <h3>First 4-6 Weeks Post-Surgery</h3>
+            <div class="warning-box" role="alert">
+                <h4>Important</h4>
+                <p>Follow a low-residue, low-fiber diet during initial healing to prevent blockages while the stoma heals and swelling decreases.</p>
+            </div>
+
+            <div class="cards-grid">
+                <article class="card">
+                    <h4>Recommended Proteins & Grains</h4>
+                    <p><strong>Proteins:</strong></p>
+                    <ul>
+                        <li>Ground meats and poultry</li>
+                        <li>Flaky fish</li>
+                        <li>Eggs (small amounts initially)</li>
+                        <li>Creamy nut butters</li>
+                        <li>Dairy products (if tolerated)</li>
+                        <li>Tofu</li>
+                    </ul>
+                    <p><strong>Grains:</strong></p>
+                    <ul>
+                        <li>White bread, refined cereals</li>
+                        <li>White rice, white pasta</li>
+                    </ul>
+                </article>
+
+                <article class="card">
+                    <h4>Recommended Fruits & Vegetables</h4>
+                    <p><strong>Fruits:</strong></p>
+                    <ul>
+                        <li>Canned or pureed fruits</li>
+                        <li>Peeled cooked fruits</li>
+                        <li>Soft ripe bananas (limit 1 small/day)</li>
+                        <li>Melons</li>
+                    </ul>
+                    <p><strong>Vegetables:</strong></p>
+                    <ul>
+                        <li>Well-cooked without skins or seeds</li>
+                        <li>Avoid raw and stringy vegetables</li>
+                    </ul>
+                </article>
+
+                <article class="card">
+                    <h4>Foods to Avoid (First 6-8 Weeks)</h4>
+                    <ul>
+                        <li>Nuts, seeds, popcorn</li>
+                        <li>Coconut, dried fruits</li>
+                        <li>Raw vegetables with skins</li>
+                        <li>Whole grains</li>
+                        <li>Tough meats or casings</li>
+                        <li>Citrus fruits with membranes</li>
+                        <li>Mushrooms, corn</li>
+                    </ul>
+                </article>
+            </div>
+
+            <h3>Long-Term Dietary Guidelines</h3>
+            <div class="success-box">
+                <h4>Introduction Strategy (After 4-6 weeks)</h4>
+                <ul>
+                    <li>Add one new food at a time</li>
+                    <li>Wait to observe effects before adding another</li>
+                    <li>Keep a food diary to track tolerance</li>
+                    <li>Chew all foods thoroughly to consistency of applesauce</li>
+                    <li>Eat smaller, regular meals rather than large portions</li>
+                </ul>
+            </div>
+
+            <div class="cards-grid">
+                <article class="card">
+                    <h4>May Cause Gas</h4>
+                    <ul>
+                        <li>Beans and legumes</li>
+                        <li>Cabbage, broccoli, cauliflower</li>
+                        <li>Onions and garlic</li>
+                        <li>Carbonated beverages, beer</li>
+                    </ul>
+                </article>
+
+                <article class="card">
+                    <h4>May Cause Odor</h4>
+                    <ul>
+                        <li>Eggs, fish</li>
+                        <li>Asparagus</li>
+                        <li>Onions and garlic</li>
+                        <li>Spicy foods</li>
+                    </ul>
+                </article>
+
+                <article class="card">
+                    <h4>May Thicken Output</h4>
+                    <ul>
+                        <li>White rice, bananas</li>
+                        <li>Applesauce, pasta, bread</li>
+                        <li>Smooth peanut butter</li>
+                        <li>Cheese</li>
+                    </ul>
+                </article>
+
+                <article class="card">
+                    <h4>May Increase Output</h4>
+                    <ul>
+                        <li>High-fiber foods</li>
+                        <li>Spicy foods</li>
+                        <li>Alcohol, caffeine</li>
+                        <li>Fried foods, high sugar</li>
+                    </ul>
+                </article>
+            </div>
+
+            <div class="info-box">
+                <h4>Key Nutrients to Monitor</h4>
+                <p>People with ileostomies are at higher risk for specific nutritional deficiencies:</p>
+                <ul>
+                    <li><strong>Vitamin B12:</strong> Absorbed in terminal ileum and colon; annual blood tests recommended</li>
+                    <li><strong>Iron:</strong> Higher risk of deficiency</li>
+                    <li><strong>Magnesium:</strong> Often requires supplementation</li>
+                    <li><strong>Folate:</strong> Monitor levels regularly</li>
+                </ul>
+                <p><strong>Supplementation:</strong> Take a daily chewable multivitamin with minerals while following a restricted diet.</p>
+            </div>
+        </section>
+
+        <!-- Contextual Sponsored Content -->
+        <aside class="sponsored-card" aria-label="Sponsored content">
+            <ins class="adsbygoogle"
+                 style="display:block; text-align:center;"
+                 data-ad-layout="in-article"
+                 data-ad-format="fluid"
+                 data-ad-client="ca-pub-1198873851888355"
+                 data-ad-slot="auto"></ins>
+            <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+        </aside>
+
+        <section id="hydration" aria-labelledby="hydration-heading">
+            <div class="section-header">
+                <span class="section-number" aria-hidden="true">03</span>
+                <h2 id="hydration-heading">Hydration & Electrolytes</h2>
+            </div>
+
+            <div class="alert-box" role="alert">
+                <h3>Critical Importance</h3>
+                <p>Patients with ileostomies lose excessive quantities of water and sodium in the ileostomy effluent compared to normal fecal losses. This creates a chronic state of dehydration and electrolyte imbalance that requires ongoing management.</p>
+            </div>
+
+            <h3>Hydration Requirements</h3>
+            <div class="info-box">
+                <h4>Daily Fluid Goals</h4>
+                <ul>
+                    <li>Drink 8-10 glasses (2-2.5 liters) of liquids daily</li>
+                    <li>Aim for urine output greater than 1,200 mL per day</li>
+                    <li>Monitor for stool output less than 1,200 mL per day</li>
+                </ul>
+            </div>
+
+            <div class="cards-grid">
+                <article class="card">
+                    <h4>Best Fluid Choices</h4>
+                    <ul>
+                        <li>Water</li>
+                        <li>Oral rehydration solutions (ORS)</li>
+                        <li>Sports drinks diluted with water</li>
+                        <li>Milk (if tolerated)</li>
+                        <li>Unsweetened juices</li>
+                        <li>Decaffeinated coffee or tea</li>
+                    </ul>
+                </article>
+
+                <article class="card">
+                    <h4>Fluids to Limit</h4>
+                    <ul>
+                        <li>Caffeinated beverages</li>
+                        <li>Alcohol</li>
+                        <li>Hypotonic fluids (plain water, coffee, tea, juice) should be restricted to 500-1,000 mL per day to prevent increased output</li>
+                    </ul>
+                </article>
+            </div>
+
+            <div class="success-box">
+                <h4>Oral Rehydration Solutions</h4>
+                <p>Studies demonstrate that isotonic hydration solutions can prevent dehydration and reduce readmissions.</p>
+                <p><strong>Options include:</strong> Pedialyte, Drip Drop, Ceralyte, or homemade solutions as directed by your healthcare provider.</p>
+            </div>
+
+            <h3>Signs of Dehydration</h3>
+            <div class="alert-box" role="alert">
+                <h4>Seek medical attention if experiencing:</h4>
+                <ul>
+                    <li>Dry mouth and increased thirst</li>
+                    <li>Muscle cramping</li>
+                    <li>Decreased urination or dark urine</li>
+                    <li>Dizziness or lightheadedness</li>
+                    <li>Increased fatigue or headache</li>
+                    <li>Confusion</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="skin-care" aria-labelledby="skin-care-heading">
+            <div class="section-header">
+                <span class="section-number" aria-hidden="true">04</span>
+                <h2 id="skin-care-heading">Stoma & Skin Care</h2>
+            </div>
+
+            <div class="info-box">
+                <h3>Basic Stoma Care Principles</h3>
+                <p>The skin around your stoma (peristomal skin) should look the same as it did before surgery. Protecting this skin is essential because ileostomy output is watery, highly alkaline, and contains proteolytic enzymes that can irritate skin.</p>
+                <p><strong>Incidence:</strong> 25-43% of patients with ileostomies experience peristomal skin complications.</p>
+            </div>
+
+            <h3>Pouching Systems</h3>
+            <div class="cards-grid">
+                <article class="card">
+                    <h4>Types of Systems</h4>
+                    <ul>
+                        <li><strong>One-piece:</strong> Skin barrier and pouch combined as single unit</li>
+                        <li><strong>Two-piece:</strong> Separate skin barrier (stays on skin) and pouch</li>
+                    </ul>
+                </article>
+
+                <article class="card">
+                    <h4>Changing Frequency</h4>
+                    <ul>
+                        <li>Empty pouch when 1/3 to 1/2 full</li>
+                        <li>Change baseplate once or twice weekly</li>
+                        <li>Avoid wearing pouches longer than 5 days</li>
+                    </ul>
+                </article>
+            </div>
+
+            <div class="info-box">
+                <h4>Cleaning Steps</h4>
+                <ol>
+                    <li>Use warm water for cleaning (soap optional)</li>
+                    <li>If using soap, choose mild product without lotions or oils</li>
+                    <li>Avoid alcohol-based products (cause excessive drying)</li>
+                    <li>Pat skin completely dry before applying new barrier</li>
+                    <li>Do not use oil-based products on peristomal skin</li>
+                </ol>
+            </div>
+
+            <div class="success-box">
+                <h4>Normal Characteristics to Monitor</h4>
+                <ul>
+                    <li>Stoma: Pink/red, moist, slightly shiny</li>
+                    <li>May bleed slightly when cleaned (normal)</li>
+                    <li>Small amount of mucus is normal</li>
+                </ul>
+            </div>
+
+            <div class="alert-box" role="alert">
+                <h4>Contact Healthcare Provider If:</h4>
+                <ul>
+                    <li>Skin becomes red, wet, or irritated</li>
+                    <li>Deep sores or ulcers develop</li>
+                    <li>Stoma becomes very dark, purple, or black</li>
+                    <li>Continuous bleeding at stoma-skin junction</li>
+                    <li>Severe swelling or sudden changes in stoma size</li>
+                    <li>No output for 4-6 hours with cramping</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Mid-Content Ad -->
+        <aside class="ad-container" aria-label="Advertisement">
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-1198873851888355"
+                 data-ad-slot="auto"
+                 data-ad-format="rectangle"
+                 data-full-width-responsive="true"></ins>
+            <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+        </aside>
+
+        <section id="high-output" aria-labelledby="high-output-heading">
+            <div class="section-header">
+                <span class="section-number" aria-hidden="true">05</span>
+                <h2 id="high-output-heading">Managing High Output</h2>
+            </div>
+
+            <div class="warning-box">
+                <h4>Definition & Incidence</h4>
+                <p>High output stoma is defined as output exceeding 1,000-2,000 mL per day. This condition affects 14-24% of ileostomy patients.</p>
+            </div>
+
+            <div class="alert-box" role="alert">
+                <h4>Consequences of High Output</h4>
+                <ul>
+                    <li>Water and sodium depletion</li>
+                    <li>Secondary hyperaldosteronism</li>
+                    <li>Electrolyte imbalances (including hypomagnesemia)</li>
+                    <li>Risk of acute kidney injury</li>
+                    <li>Dehydration requiring readmission</li>
+                </ul>
+            </div>
+
+            <div class="info-box">
+                <h4>Immediate Interventions</h4>
+                <ol>
+                    <li><strong>Fluid resuscitation:</strong> Intravenous fluids and electrolytes if severe</li>
+                    <li><strong>Restrict hypotonic fluids:</strong> Limit water, coffee, tea, juice to 500-1,000 mL daily</li>
+                    <li><strong>Increase isotonic fluid intake:</strong> Use oral rehydration solutions</li>
+                </ol>
+
+                <h4>Medications</h4>
+                <p><strong>Antimotility Drugs (First-line):</strong></p>
+                <ul>
+                    <li>Loperamide (Imodium): Start with 2mg three times daily before meals</li>
+                    <li>Can increase gradually up to maximum 24mg daily</li>
+                </ul>
+
+                <p><strong>Antisecretory Drugs:</strong> H2 antagonists or proton pump inhibitors</p>
+
+                <h4>Monitoring</h4>
+                <ul>
+                    <li>Track daily output volumes</li>
+                    <li>Monitor urine color (should be pale yellow)</li>
+                    <li>Regular blood tests for electrolytes and kidney function</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="exercise" aria-labelledby="exercise-heading">
+            <div class="section-header">
+                <span class="section-number" aria-hidden="true">06</span>
+                <h2 id="exercise-heading">Physical Activity & Exercise</h2>
+            </div>
+
+            <div class="success-box">
+                <h3>Benefits of Exercise</h3>
+                <p>Regular physical activity provides numerous benefits including improved cardiovascular health, increased muscle strength, better mood, and enhanced quality of life.</p>
+                <p><strong>Research shows:</strong> 70-80% of patients report significant improvements in quality of life post-ileostomy, with many describing their stoma as "a second chance at life."</p>
+            </div>
+
+            <h3>Timeline for Resuming Exercise</h3>
+            <div class="cards-grid">
+                <article class="card">
+                    <h4>First 6 Weeks</h4>
+                    <ul>
+                        <li><strong>Walking:</strong> Begin almost immediately; start slowly</li>
+                        <li><strong>Avoid:</strong> Lifting over 8-10 pounds</li>
+                        <li><strong>Focus:</strong> Protecting healing tissues</li>
+                    </ul>
+                </article>
+
+                <article class="card">
+                    <h4>6-12 Weeks</h4>
+                    <ul>
+                        <li>Gradually increase activity level</li>
+                        <li>Begin low-impact exercises with approval</li>
+                        <li>Continue avoiding heavy lifting</li>
+                    </ul>
+                </article>
+
+                <article class="card">
+                    <h4>After 12 Weeks</h4>
+                    <ul>
+                        <li>Most activities can be resumed</li>
+                        <li>Return to weight training with precautions</li>
+                        <li>Medical clearance recommended</li>
+                    </ul>
+                </article>
+            </div>
+
+            <div class="info-box">
+                <h4>Safe Activities by Category</h4>
+                <p><strong>Low-Impact (Safe to Start Early):</strong> Walking, gentle stretching, stationary cycling, light resistance bands, swimming with waterproof system</p>
+                <p><strong>Moderate (Introduce Gradually):</strong> Jogging, yoga, Pilates, recreational cycling</p>
+                <p><strong>Higher-Risk (Special Precautions):</strong> Weight training, contact sports, heavy lifting</p>
+            </div>
+
+            <div class="warning-box">
+                <h4>Preventing Parastomal Hernia</h4>
+                <ul>
+                    <li>Avoid lifting over 8 pounds in first 6 weeks</li>
+                    <li>Use ostomy support belt when engaging abdominal muscles</li>
+                    <li>Strengthen core muscles gradually with proper technique</li>
+                    <li>Consider supportive garments</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Contextual Sponsored Content -->
+        <aside class="sponsored-card" aria-label="Sponsored content">
+            <ins class="adsbygoogle"
+                 style="display:block; text-align:center;"
+                 data-ad-layout="in-article"
+                 data-ad-format="fluid"
+                 data-ad-client="ca-pub-1198873851888355"
+                 data-ad-slot="auto"></ins>
+            <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+        </aside>
+
+        <section id="complications" aria-labelledby="complications-heading">
+            <div class="section-header">
+                <span class="section-number" aria-hidden="true">07</span>
+                <h2 id="complications-heading">Recognizing Complications</h2>
+            </div>
+
+            <div class="alert-box" role="alert">
+                <h3>When to Seek Immediate Help</h3>
+                <ul>
+                    <li>Stoma color changes to dark purple or black</li>
+                    <li>No output for 4-6 hours with abdominal pain or cramping</li>
+                    <li>Signs of severe dehydration (confusion, rapid heart rate)</li>
+                    <li>Significant bleeding from the stoma</li>
+                    <li>Signs of infection (fever, spreading redness, pus)</li>
+                </ul>
+            </div>
+
+            <div class="info-box">
+                <h4>Common Complications to Monitor</h4>
+                <ul>
+                    <li><strong>Blockages:</strong> May occur from certain foods; often resolve with rest and fluids</li>
+                    <li><strong>Skin irritation:</strong> Usually from leakage; address pouching system fit</li>
+                    <li><strong>Dehydration:</strong> Common in hot weather or with illness; increase fluids</li>
+                    <li><strong>Parastomal hernia:</strong> Bulging around stoma; may require supportive wear</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="wellbeing" aria-labelledby="wellbeing-heading">
+            <div class="section-header">
+                <span class="section-number" aria-hidden="true">08</span>
+                <h2 id="wellbeing-heading">Emotional Wellbeing</h2>
+            </div>
+
+            <div class="success-box">
+                <h3>You Are Not Alone</h3>
+                <p>Adjusting to life with an ileostomy is a journey. It's normal to experience a range of emotions including relief, grief, anxiety, and hope—sometimes all in the same day.</p>
+            </div>
+
+            <div class="cards-grid">
+                <article class="card">
+                    <h4>Support Resources</h4>
+                    <ul>
+                        <li>Ostomy support groups (in-person and online)</li>
+                        <li>Certified ostomy nurses (WOCNs)</li>
+                        <li>Mental health professionals familiar with chronic illness</li>
+                        <li>Peer mentoring programs</li>
+                    </ul>
+                </article>
+
+                <article class="card">
+                    <h4>Tips for Adjustment</h4>
+                    <ul>
+                        <li>Give yourself time to adapt</li>
+                        <li>Celebrate small victories</li>
+                        <li>Connect with others who understand</li>
+                        <li>Focus on what you can do, not limitations</li>
+                        <li>Communicate openly with loved ones</li>
+                    </ul>
+                </article>
+            </div>
+
+            <div class="info-box">
+                <h4>Returning to Normal Life</h4>
+                <p>Most people with ileostomies return to their previous activities including work, travel, sports, and intimate relationships. With proper care and support, an ileostomy can be the beginning of a healthier, more active life.</p>
+            </div>
+        </section>
+
+        <!-- Bottom Banner Ad -->
+        <aside class="ad-container ad-banner" aria-label="Advertisement">
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-1198873851888355"
+                 data-ad-slot="auto"
+                 data-ad-format="horizontal"
+                 data-full-width-responsive="true"></ins>
+            <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+        </aside>
+    </main>
+
+    <!-- Sidebar Ad for wide screens -->
+    <aside class="ad-sidebar" aria-label="Advertisement">
+        <div class="ad-container">
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-1198873851888355"
+                 data-ad-slot="auto"
+                 data-ad-format="vertical"></ins>
+            <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+        </div>
+    </aside>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" aria-label="Back to top" title="Back to top">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <polyline points="18 15 12 9 6 15"></polyline>
+        </svg>
+    </button>
+
+    <footer role="contentinfo">
+        <div class="disclaimer">
+            <h4>Medical Disclaimer</h4>
+            <p>This guide is for educational purposes only and does not replace professional medical advice. Always consult with your healthcare team, including your surgeon and ostomy nurse, for personalized guidance about your care.</p>
+        </div>
+        <p class="footer-meta">Living Well with an Ileostomy • Evidence-Based Guide</p>
+    </footer>
+
+    <script>
+        // Intersection Observer for section reveal
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('section').forEach(section => {
+            observer.observe(section);
+        });
+
+        // Smooth scroll for navigation with keyboard support
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const target = document.querySelector(targetId);
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                    // Update URL without page jump
+                    history.pushState(null, '', targetId);
+                    // Move focus to target for accessibility
+                    target.setAttribute('tabindex', '-1');
+                    target.focus();
+                }
+            });
+        });
+
+        // Back to top button functionality
+        const backToTopButton = document.querySelector('.back-to-top');
+        
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 500) {
+                backToTopButton.classList.add('visible');
+            } else {
+                backToTopButton.classList.remove('visible');
+            }
+        }, { passive: true });
+
+        backToTopButton.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // Active navigation state based on scroll position
+        const sections = document.querySelectorAll('section[id]');
+        const navLinks = document.querySelectorAll('nav a');
+
+        function updateActiveNav() {
+            const scrollPosition = window.scrollY + 150;
+            
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.offsetHeight;
+                const sectionId = section.getAttribute('id');
+                
+                if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+                    navLinks.forEach(link => {
+                        link.removeAttribute('aria-current');
+                        if (link.getAttribute('href') === '#' + sectionId) {
+                            link.setAttribute('aria-current', 'true');
+                        }
+                    });
+                }
+            });
+        }
+
+        window.addEventListener('scroll', updateActiveNav, { passive: true });
+        updateActiveNav(); // Initial call
+    </script>
+</body>
+</html>
